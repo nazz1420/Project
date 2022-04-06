@@ -13,64 +13,113 @@
     <script nomodule src="https://cdn.jsdelivr.net/npm/@duetds/date-picker@1.4.0/dist/duet/duet.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@duetds/date-picker@1.4.0/dist/duet/themes/default.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
 </head>
 <style>
-    .m-img {
-        height: 75px;
+    .m-logo {
+        height: 60px;
     }
     
     .nav-link {
-        color: black;
+        color: rgb(0, 0, 0);
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         font-size: 22px;
         font-weight: bolder;
         padding-right: 28px;
     }
+    
+    .icon .nav-link {
+        color: rgb(250, 249, 251);
+    }
+    
+    a:hover {
+        color: rgb(245, 72, 72)!important;
+    }
+    
+    .carousel-inner,
+    img {
+        height: 906px;
+        background-image: url();
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    header {
+        z-index: 100;
+        position: sticky;
+        top: 0;
+    }
 </style>
 
 <body>
-    <div class="container-fluid border ">
-        <div class="row align-item-center">
-            <div class="col-2 text-center">
-                <img class="m-img" src="/img/imagesSalon2.png" alt="...">
-            </div>
-
-            <div class="col-7 py-2">
-                <div class="d-flex justify-content-center">
-                    <ul class="nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Reviews</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="col-3 py-2">
-                <div class="d-flex justify-content-end">
-                    <ul class="nav">
-                        <li class="nav-item"> <a class="nav-link" href="#"><i class="fa-brands fa-twitter"></i></a> </li>
-                        <li class="nav-item"> <a class="nav-link" href="#"><i class="fa-brands fa-facebook-f"></i> </a> </li>
-                        <li class="nav-item"> <a class="nav-link" href="#"><i class="fa-solid fa-envelope"></i></a> </li>
-                        <li class="nav-item"> <a class="nav-link" href="#"><i class="fa-brands fa-instagram-square"></i></a> </li>
-                    </ul>
+    <!-- Header -->
+    <div class="container-fluid" style="height:800px; width:100%;">
+        <header class="main-header shadow-sm">
+            <div class="row align-item-center">
+                <div class="col-2 text-center">
+                    <img class="m-logo" src="/img/imagesSalon1.png" alt="...">
                 </div>
 
+                <div class="col-7 py-2">
+                    <div class="d-flex justify-content-center">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Reviews</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-3 py-2">
+                    <div class="d-flex justify-content-end">
+                        <ul class="nav icon">
+                            <li class="nav-item"> <a class="nav-link" href="https://www.twitter.com/NazneenMansury"><i class="fa-brands fa-twitter"></i></a> </li>
+                            <li class="nav-item"> <a class="nav-link" href="#"><i class="fa-brands fa-facebook-f"></i> </a> </li>
+                            <li class="nav-item"> <a class="nav-link" href="#"><i class="fa-solid fa-envelope"></i></a> </li>
+                            <li class="nav-item"> <a class="nav-link" href="#"><i class="fa-brands fa-instagram-square"></i></a> </li>
+                        </ul>
+                    </div>
+
+                </div>
             </div>
-        </div>
+        </header>
+        <section style=" top:-80px; " class="position-relative w-100">
+            <div id="main-content">
+                <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/img/bg4.jpg" class="d-block w-100" alt="">
+                        </div>
+                        <div class="carousel-item ">
+                            <img src="/img/bg2.png" class="d-block w-100" alt="">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" ></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
     </div>
+
 </body>

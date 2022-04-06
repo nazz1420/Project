@@ -1,0 +1,33 @@
+.m-logo {
+    height: 60px;
+}
+
+.nav-link {
+    color: rgb(0, 0, 0);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 22px;
+    font-weight: bolder;
+    padding-right: 28px;
+}
+
+.icon .nav-link {
+    color: rgb(250, 249, 251);
+}
+
+a:hover {
+    color: rgb(245, 72, 72)!important;
+}
+
+.carousel-inner,
+img {
+    height: 906px;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    z-index: 100;
+    position: sticky;
+    top: 0;
+}
