@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page with slider </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/e01e6aea1e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assests/css/index.css" />
+</head>
+<style>
+    .main-header {
+        height: 80px;
+        z-index: 100;
+    }
+    
+    .logo-img {
+        /* width: 50px; */
+        height: 70px;
+    }
+    
+    .header-nav .nav-item .nav-link {
+        color: #fff;
+        font-size: 25px;
+        font-weight: 550;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    
+    #bg-image {
+        height: 890px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+</style>
+
+<body>
+    <div class="container-fluid" style="height:830px;">
+        <header class="main-header position-sticky top-0 shadow margin-x-n1">
+            <div class="row align-items-center h-100 border-bottom ">
+                <div class="col-2 text-center">
+                    <img class="logo-img" src="/img/logo.png" alt="logo" />
+                </div>
+                <div class="col-7">
+                    <div class="d-flex justify-content-center">
+                        <ul class="nav header-nav">
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Timing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="#">Reviews</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-3">
+                    <div class="d-flex justify-content-end">
+                        <ul class="nav header-nav">
+                            <li class="nav-item"> <a class="nav-link" href="https://www.twitter.com/NazneenMansury"><i class="fa-brands fa-twitter"></i></a> </li>
+                            <li class="nav-item"> <a class="nav-link" href="#"><i class="fa-brands fa-facebook-f"></i> </a> </li>
+                            <li class="nav-item"> <a class="nav-link" href="#"><i class="fa-solid fa-envelope"></i></a> </li>
+                            <li class="nav-item"> <a class="nav-link" href="#"><i class="fa-brands fa-instagram-square"></i></a> </li>
+                            <li class="nav-item"> <a class="nav-link" href="#"><i class="fa-brands fa-github"></i></a> </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section style=" margin:0px -12px; top:-80px;" class="position-relative">
+            <div id="bg-image">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/img/bg2.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/img/bg2.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="/img/bg2.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+</body>
+
+</html>
+
+</html>

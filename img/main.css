@@ -1,5 +1,10 @@
-.m-logo {
-    height: 60px;
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 70px;
 }
 
 .nav-link {
@@ -10,24 +15,9 @@
     padding-right: 28px;
 }
 
-.icon .nav-link {
-    color: rgb(250, 249, 251);
-}
-
-a:hover {
-    color: rgb(245, 72, 72)!important;
-}
-
-.carousel-inner,
-img {
-    height: 906px;
-    background-image: url();
+.bg-image {
+    height: 820px;
+    background-image: url(/img/bg2.png);
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-header {
-    z-index: 100;
-    position: sticky;
-    top: 0;
 }
